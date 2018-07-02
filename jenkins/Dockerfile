@@ -8,4 +8,4 @@ RUN chown -R jenkins:jenkins /var/cache/jenkins
 USER jenkins
 
 ENV JAVA_OPTS="-Xmx8192m"
-ENV JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300 --logfile=/var/log/jenkins/jenkins.log  --webroot=/var/cache/jenkins/war"
+ENV JENKINS_OPTS="--handlerCountStartup=100 --handlerCountMax=300 --logfile=/var/log/jenkins/jenkins.log   --prefix=/service  --webroot=/var/cache/jenkins/war"

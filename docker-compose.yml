@@ -1,11 +1,14 @@
 jenkinsdata:
  build: jenkins-data
 jenkinsmaster:
- image: jenkins
+ image: testimtest
  volumes_from:
   - jenkinsdata
  ports:
   - "50000:50000"
+  - "8080:8080"
+
+
 jenkinsnginx:
  build: ./nginx/.
  ports:
